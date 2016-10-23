@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 46.5em) {
     .box {
-        font-size: 65%;
+        font-size: 50%;
     }
 
     .box {
@@ -152,3 +152,22 @@ section {
     text-transform: uppercase;
 }
 
+.box h2 .title, .box h2 .below {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+section .box:hover h2 .title{
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+section .box:hover h2 .below{
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    transform: translateY(15px);
+}
